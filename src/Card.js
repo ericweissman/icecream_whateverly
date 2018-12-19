@@ -1,13 +1,19 @@
 import React, { Component } from 'react';
+import App from './App.js'
 
 class Card extends Component {
-  constructor() {
-    super()
-    
+  constructor(props) {
+    super(props)
+
   }
 
   render() {
-    return 
+    return (
+      <div>
+        <p>{this.props.flavor}</p>
+        <p>{this.props.descriptions}</p>
+      </div>
+    )
   }
 
 
