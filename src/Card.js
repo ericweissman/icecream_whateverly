@@ -10,8 +10,16 @@ class Card extends Component {
   render() {
     return (
       <div>
-        <p>{this.props.flavor}</p>
-        <p>{this.props.descriptions}</p>
+        {
+        Object.values(this.props.icecream).map((type) => {
+          return(
+            <div>
+              <h1>{type.name}</h1>
+            </div>
+          )
+        })
+      }
+        {/* <p>{this.props.icecream}</p> */}
       </div>
     )
   }

@@ -9,31 +9,25 @@ import Search from './Search.js'
 class App extends Component {
   constructor() {
     super();
-    console.log(Object.values(icecream).map((flavor) => {
-      return flavor.name
-    }))
+    
     this.state = {
-      flavors: Object.values(icecream).map((flavor) => {
-        return flavor.name
-      }),
-      descriptions: Object.values(icecream).map((flavor) => {
-        return flavor.description
-      }),
-      parlor_names: parlors.map((parlor) => {
-        return parlor.parlorName
-      }),
+      parlors: parlors,
+      icecream: icecream,
+      }
+      // descriptions: Object.values(icecream).map((flavor) => {
+      //   return flavor.description
+      // }),
+      // parlor_names: parlors.map((parlor) => {
+      //   return parlor.parlorName
+      // }),
 
-    }
+    
   }
   render() {
     return (
       <div className="App">
-      {
-        this.state.flavors.map((flavor) => {
-          return (<Card {...flavor}/>)
-        })
-      }
-        <Card flavors={this.state.flavors} descriptions={this.state.descriptions} />
+        <Card parlors = {this.state.parlors} 
+              icecream = {this.state.icecream}/>
       </div>
     );
   }
