@@ -8,9 +8,17 @@ class Card extends Component {
   }
 
   render() {
+    const keys = Object.keys(this.props.icecream);  
     return (
       <div>
         {
+          keys.map((key) => {
+            return(
+              <div>
+                <img src="./public/images/Flavors/1.jpg"></img>
+              </div>
+            )
+          })
         Object.values(this.props.icecream).map((type) => {
           return(
             <div>
