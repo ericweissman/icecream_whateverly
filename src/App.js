@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import Card from './Card.js'
+import CardContainer from './CardContainer.js'
 import logo from './logo.svg';
 // import { parlors, icecream } from './dataset.js'
 import { uid } from 'react-uid'
+import Header from './Header'
 
-// import './App.css';
+import './css/App.css';
 import Search from './Search.js'
 
 class App extends Component {
@@ -43,14 +44,16 @@ class App extends Component {
   }
 
   render() {
-    console.log('this.state.parlors', this.state.parlors)
     return (
       <div className="App">
-        <Card parlors = {this.state.parlors} 
-              icecream = {this.state.icecream}/>
+        <div>
+          <Header/>
+          <CardContainer parlors={this.state.parlors} 
+                        icecream={this.state.icecream}/>
+        </div>
       </div>
     );
   }
-}
+} 
 
 export default App;

@@ -8,7 +8,11 @@ class Search extends Component {
   }
 
   render() {
-    return
+    return (
+      <div className='search'>
+        <input type='text'></input>
+      </div>
+    )
   }
 }
 
