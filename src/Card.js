@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import App from './App.js'
+import App from './App.js';
+import './css/Card.css'
+// import images from './images/';
 
 class Card extends Component {
   constructor(props) {
@@ -13,19 +15,14 @@ class Card extends Component {
       <div>
         {
           keys.map((key) => {
+            let filePath = `./images/Flavors/${key}.jpg`
             return(
               <div>
-                <img src="./public/images/Flavors/1.jpg"></img>
+                <img class="flavor-img" src={filePath}/>
+                <h1>{this.props.icecream[key].name}</h1>
               </div>
             )
           })
-        Object.values(this.props.icecream).map((type) => {
-          return(
-            <div>
-              <h1>{type.name}</h1>
-            </div>
-          )
-        })
       }
         {/* <p>{this.props.icecream}</p> */}
       </div>
