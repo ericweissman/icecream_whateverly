@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import App from './App.js';
 import './css/Card.css'
+import { uid } from 'react-uid'
+
 // import images from './images/';
 
 class Card extends Component {
@@ -10,7 +12,7 @@ class Card extends Component {
   }
 
   render() {
-    const keys = Object.keys(this.props.icecream);  
+    const keys = Object.keys(this.props.icecream);
     return (
       <div>
         {
