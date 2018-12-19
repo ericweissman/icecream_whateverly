@@ -30,7 +30,7 @@ class App extends Component {
       .then(results => results.json())
       .then((result) => {
         this.setState({
-          parlors: result
+          parlors: result.parlors
         })
       })
     fetch("https://whateverly-datasets.herokuapp.com/api/v1/flavors")
@@ -43,7 +43,6 @@ class App extends Component {
   }
 
   render() {
-    console.log('this.state.icecream', this.state.icecream)
     console.log('this.state.parlors', this.state.parlors)
     return (
       <div className="App">
