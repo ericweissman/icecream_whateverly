@@ -13,13 +13,12 @@ class Card extends Component {
 
   render() {
     return (
-            <div class='ice-cream-card'>
+      <div class='ice-cream-card'>
           <img class="flavor-img" src={`./images/Flavors/${this.props.img}.jpg`}/>
-              <h1 class="ice-cream-name">{this.props.flavor}</h1>
-              <p>{this.props.info}</p>
-              <button class="ice-cream-info-btn">More Info</button>
-              </div>
-  
+          <h1 class="ice-cream-name">{this.props.flavor}</h1>
+          <button class="ice-cream-info-btn">More Info</button>
+      </div>
+
     )
   }
 

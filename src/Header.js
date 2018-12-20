@@ -13,7 +13,7 @@ class Header extends Component {
       return (
         <header class="header">
           <h1>Home</h1>
-          <Search/>
+          <Search searchFor={this.props.searchFor}/>
         </header>
 
 

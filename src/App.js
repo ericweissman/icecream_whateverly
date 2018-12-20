@@ -15,15 +15,8 @@ class App extends Component {
     this.state = {
       parlors: [],
       icecream: {},
-      page: "HOME"
+      value: ''
       }
-      // descriptions: Object.values(icecream).map((flavor) => {
-      //   return flavor.description
-      // }),
-      // parlor_names: parlors.map((parlor) => {
-      //   return parlor.parlorName
-      // }),
-
     
   }
   componentDidMount() {
@@ -43,13 +36,19 @@ class App extends Component {
       })
   }
 
+  searchFor = (event) => {
+    this.setState({value: event.target.value})
+  }
+
+
   render() {
     return (
       <div className="App">
         <div>
-          <Header/>
+          <Header searchFor={this.searchFor}/>
           <CardContainer parlors={this.state.parlors} 
-                        icecream={this.state.icecream}/>
+                        icecream={this.state.icecream}
+                        search={this.state.value}/>
         </div>
       </div>
     );
