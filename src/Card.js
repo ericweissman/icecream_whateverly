@@ -12,22 +12,13 @@ class Card extends Component {
   }
 
   render() {
-    const keys = Object.keys(this.props.icecream);
     return (
-      <div class="card-container">
-      {
-        keys.map((key) => {
-          let filePath = `./images/Flavors/${key}.jpg`
-          return(
             <div class='ice-cream-card'>
-              <img class="flavor-img" src={filePath}/>
-              <h1 class="ice-cream-name">{this.props.icecream[key].name}</h1>
+          <img class="flavor-img" src={`./images/Flavors/${this.props.img}.jpg`}/>
+              <h1 class="ice-cream-name">{this.props.flavor}</h1>
+              <p>{this.props.info}</p>
               <button class="ice-cream-info-btn">More Info</button>
-            </div>
-          )
-        })
-    }
-      </div>
+              </div>
   
     )
   }
