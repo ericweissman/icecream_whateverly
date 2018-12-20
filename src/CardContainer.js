@@ -15,7 +15,7 @@ class CardContainer extends Component {
     const keys = Object.keys(this.props.icecream);
 
     return (
-      <div class="card-container">
+      <div className="card-container">
         {
           keys.map((key) => {
             const flavor = this.props.icecream[key].name.toLowerCase()

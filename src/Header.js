@@ -11,18 +11,12 @@ class Header extends Component {
     }
     render() {
       return (
-        <header class="header">
+        <header className="header">
           <h1>Home</h1>
           <Search searchFor={this.props.searchFor}/>
         </header>
-
-
       );
-
-      
     }
-
-
   }
 
 

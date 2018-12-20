@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
 import CardContainer from './CardContainer.js'
-import logo from './logo.svg';
-// import { parlors, icecream } from './dataset.js'
-import { uid } from 'react-uid'
 import Header from './Header'
-
 import './css/App.css';
-import Search from './Search.js'
 
 class App extends Component {
   constructor() {
@@ -26,20 +21,20 @@ class App extends Component {
         this.setState({
           parlors: result.parlors
         })
-      })
+      }).catch(err => alert('Loading'))
+
     fetch("https://whateverly-datasets.herokuapp.com/api/v1/flavors")
       .then(results => results.json())
       .then((result) => {
         this.setState({
           icecream: result.flavors
         })
-      })
+      }).catch(err => alert('Loading'))
   }
 
   searchFor = (event) => {
     this.setState({value: event.target.value})
   }
-
 
   render() {
     return (
