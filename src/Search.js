@@ -10,7 +10,7 @@ class Search extends Component {
   render() {
     return (
       <div className='search'>
-        <input type='text' onChange={this.props.searchFor}></input>
+        <input type='text' className='search-input' onChange={this.props.searchFor}></input>
       </div>
     )
   }

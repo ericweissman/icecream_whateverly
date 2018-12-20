@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should match the snapshot with all data passed in correctly 1`] = `
+<header
+  className="header"
+>
+  <h1>
+    Home
+  </h1>
+  <Search
+    searchFor={[MockFunction]}
+  />
+</header>
+`;
