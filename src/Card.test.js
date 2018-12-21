@@ -75,7 +75,7 @@ let parlors = [
         });
 
     it('should change Card moreInfo state to true when the getParlorDetails method is called', () => {
-        wrapper.find('.ice-cream-info-btn').simulate('click', { moreInfo: false})
+        wrapper.find('.more-info-btn').simulate('click', { moreInfo: false})
         expect(wrapper.state('moreInfo')).toEqual(true)
         });
     })
