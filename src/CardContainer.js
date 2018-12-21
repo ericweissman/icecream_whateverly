@@ -10,7 +10,6 @@ class CardContainer extends Component {
 
   };
 
-
   render() {
     const keys = Object.keys(this.props.icecream);
     return (
@@ -26,15 +25,12 @@ class CardContainer extends Component {
                 info={this.props.icecream[key].description}
                 parlors={this.props.parlors}
                 />
-             
-              )
-            }
+              )}
           })
         }
       </div>
     )
   }
-
 
 }
 export default CardContainer;

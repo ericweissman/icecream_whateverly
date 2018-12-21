@@ -25,30 +25,23 @@ class Card extends Component {
 
   render() {
     if (this.state.moreInfo === false) {
-    return (
+      return (
       <div className='ice-cream-card' id={this.props.id}>
-      <img className="flavor-img" src={`./images/Flavors/${this.props.img}.jpg`}/>
-      <h1 className="ice-cream-name">{this.props.flavor}</h1>
-      <button onClick={this.getMoreInfo}class="ice-cream-info-btn">More Info</button>
+        <img className="flavor-img" src={`./images/Flavors/${this.props.img}.jpg`}/>
+        <h1 className="ice-cream-name">{this.props.flavor}</h1>
+        <button onClick={this.getMoreInfo}class="ice-cream-info-btn">More Info</button>
       </div>
-  
-    )
-  } else {
-  return (
-    
-
-    <div className='ice-cream-card'>
-      <img className="flavor-img" src={`./images/Flavors/${this.props.img}.jpg`}/>
-      <h1 className="ice-cream-name">{this.props.flavor}</h1>
-      <ParlorArea parlors={this.props.parlors} id={this.props.id} />
-      <button onClick={this.getMoreInfo}class="ice-cream-info-btn">Less Info</button>
-    </div>
-
-  )
-
-  }
-  }
-
-
+      );
+    } else {
+        return (
+          <div className='ice-cream-card'>
+            <img className="flavor-img" src={`./images/Flavors/${this.props.img}.jpg`}/>
+            <h1 className="ice-cream-name">{this.props.flavor}</h1>
+            <button onClick={this.getMoreInfo}class="ice-cream-info-btn">Less Info</button>
+            <ParlorArea parlors={this.props.parlors} id={this.props.id} />
+          </div>
+        );
+      }
+    }
 }
 export default Card;
