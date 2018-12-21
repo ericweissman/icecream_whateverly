@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import App from './App.js';
-import './css/Card.css'
+import './css/Main.scss';
 import { uid } from 'react-uid'
 import Card from './Card.js'
 

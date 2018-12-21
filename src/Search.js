@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import App from './App.js'
+import App from './App.js';
+import './css/Main.scss';
 
 class Search extends Component {
   constructor() {
