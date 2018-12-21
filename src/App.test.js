@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import { shallow } from 'enzyme';
+import Header from './Header';
+import CardContainer from './CardContainer';
 
 const searchForMock = jest.fn();
 const parlors = [{
@@ -65,10 +67,12 @@ describe('App', () => {
 
   beforeEach(() => {
     wrapper = shallow(
+      <div>
       <Header searchFor={searchForMock} />
       <CardContainer parlors={parlors}
         icecream={icecream}
         search={value} />
+        </div>
     );
   })
 

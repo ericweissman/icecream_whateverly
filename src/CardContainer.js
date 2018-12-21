@@ -10,10 +10,8 @@ class CardContainer extends Component {
 
   };
 
-
   render() {
     const keys = Object.keys(this.props.icecream);
-
     return (
       <div className="card-container">
         {
@@ -21,19 +19,17 @@ class CardContainer extends Component {
             const flavor = this.props.icecream[key].name.toLowerCase()
             if (flavor.includes(this.props.search.toLowerCase())) {
               return (
-                <Card img={key}
+                <Card id={key}
+                img={key}
                 flavor={this.props.icecream[key].name}
                 info={this.props.icecream[key].description}
                 parlors={this.props.parlors}
-              />
-              )
-            }
+                />
+            )}
           })
         }
       </div>
     )
   }
-
-
 }
 export default CardContainer;
