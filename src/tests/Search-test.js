@@ -1,16 +1,16 @@
 import React from 'react';
-import Header from './Header.js';
+import Search from '../Search';
 import { shallow } from 'enzyme';
 
 const searchForMock = jest.fn();
 
-describe('Header', () => {
+describe('Search', () => {
   let wrapper;
 
   beforeEach(() => {
     wrapper = shallow(
-      <Header searchFor={searchForMock} />
-    );
+      <Search searchFor={searchForMock} />
+    )
   })
 
   it('should match the snapshot with all data passed in correctly', () => {
