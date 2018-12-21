@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import CardContainer from './CardContainer.js'
 import Header from './Header'
-import './css/App.css';
+import './css/Main.scss';
 
 class App extends Component {
   constructor() {
