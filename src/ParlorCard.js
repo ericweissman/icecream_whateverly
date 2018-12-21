@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import App from './App.js';
-import { uid } from 'react-uid'
+import { uid } from 'react-uid';
 
 // import images from './images/';
 
@@ -22,7 +22,7 @@ class ParlorCard extends Component {
   // }
 
   render() {
-    if (this.state.details === false) {
+    // if (this.state.details === false) {
     return (
       <div class='ice-cream-card'>
       <h1>{this.props.name}</h1>
@@ -46,7 +46,7 @@ class ParlorCard extends Component {
   // )
 
   // }
-  }
+  // }
   }
 
 }

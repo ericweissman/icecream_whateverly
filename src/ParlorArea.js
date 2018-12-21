@@ -13,32 +13,35 @@ class ParlorArea extends Component {
   render() {
 
 
-
     return (
-      <div class="parlor-area">
+      <div className="parlor-area">
+      hello there
       {
-        this.props.parlors.map((parlor) => {
+        this.props.parlors.filter((parlor) => {
+          return parlor.flavors.includes(parseInt(this.props.id))
+        })
+        .map((parlor) => {
           return (
-            <ParlorCard 
-                name={parlor.name}
-                // description={parlor.description}
-                // address={parlor.address} 
-                />
+            <ParlorCard name={parlor.parlorName}/>
           )
         })
+        // this.props.parlors.filter((parlor) => {
+        //   return parlor.flavors.includes(this.props.id)
+          
+        // }).map((parlor) => {
+        //   return (
+        //     <ParlorCard 
+        //         name={parlor.parlorName}
+                // description={parlor.description}
+                // address={parlor.address} 
+          //       />
+          // )
+        // })
       }
       </div>    
       )
     }
   }
   
-
-  
- 
-
-
-
-
-
 
 export default ParlorArea
