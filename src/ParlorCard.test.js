@@ -63,4 +63,10 @@ describe('ParlorCard', () => {
   it('should have the proper default state', () => {
     expect(wrapper.state()).toEqual({ details: false });
   });
+
+
+  it('should change ParlorCard details state to true when the getParlorDetails method is called', () => {
+      wrapper.find('.parlor-details').simulate('click', { details: false})
+      expect(wrapper.state('details')).toEqual(true)
+  })
 })

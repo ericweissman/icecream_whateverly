@@ -25,12 +25,11 @@ class CardContainer extends Component {
                 info={this.props.icecream[key].description}
                 parlors={this.props.parlors}
                 />
-              )}
+            )}
           })
         }
       </div>
     )
   }
-
 }
 export default CardContainer;

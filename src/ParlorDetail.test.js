@@ -1,4 +1,5 @@
 import React from 'react';
+import ParlorCard from './ParlorCard'
 import ParlorDetail from './ParlorDetail';
 import { shallow } from 'enzyme';
 
@@ -60,7 +61,7 @@ describe('ParlorDetail', () => {
     )
   })
 
-  it('should match the snapshot with all data passed in correctly', () => {
+  it('', () => {
     
     expect(wrapper).toMatchSnapshot();
   });

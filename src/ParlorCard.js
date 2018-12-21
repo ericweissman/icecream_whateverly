@@ -10,11 +10,11 @@ class ParlorCard extends Component {
     super(props)
 
     this.state = {
-      details : false,
+      details: false,
     }
   }
 
-  getMoreInfo = () =>{
+  getParlorDetails = () =>{
     this.setState({
       details: !this.state.details
     })
@@ -23,18 +23,18 @@ class ParlorCard extends Component {
   render() {
     if (this.state.details === false) {
       return (
-        <div className='parlor-card'>
-          <p>{this.props.parlor.parlorName}</p>
-          <p>{this.props.parlor.address}</p>
-          <button onClick={this.getMoreInfo}>Parlor Details</button>
-       </div>
+          <div className='parlor-card'>
+            <p>{this.props.parlor.parlorName}</p>
+            <p>{this.props.parlor.address}</p>
+            <button className="parlor-details" onClick={this.getParlorDetails}>Parlor Details</button>
+          </div>
       )
     } else {
       return (
-        <div className='parlor-card'>
-          <ParlorDetail parlor={this.props.parlor}/>
-          <button onClick={this.getMoreInfo}>Show Less</button>
-       </div>
+          <div className='parlor-card'>
+            <ParlorDetail parlor={this.props.parlor}/>
+            <button className='parlor-details' onClick={this.getParlorDetails}>Back to All Parlors</button>
+          </div>
       )
     }
   }
