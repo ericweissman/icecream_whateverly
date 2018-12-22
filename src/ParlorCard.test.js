@@ -1,5 +1,5 @@
 import React from 'react';
-import ParlorCard from '../ParlorCard';
+import ParlorCard from './ParlorCard';
 import { shallow } from 'enzyme';
 
 let parlor = {
