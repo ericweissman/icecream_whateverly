@@ -27,3 +27,9 @@
     border: 2px solid black;
 }
 
+.flavor-img {
+    &:hover {
+        opacity: .6;
+    }
+}
+

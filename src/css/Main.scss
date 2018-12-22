@@ -27,3 +27,10 @@ button {
     padding: 4.5px;
     background-color: rgb(242, 242, 242);
 }
+
+button {
+    &:hover {
+        background-color: rgb(123, 103, 103);
+        color: white;
+    }
+}
