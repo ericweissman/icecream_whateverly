@@ -17,6 +17,7 @@ class Header extends Component {
             <img className="header-svg" src={require('./css/images/ice-cream.svg')}/>
           </div>
           <div className="header-search-cont">
+          <header className="title">iScream</header>
             <Search searchFor={this.props.searchFor}/>
           </div>
         </header>
