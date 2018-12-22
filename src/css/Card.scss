@@ -8,23 +8,6 @@
     margin: 25px;
     flex-direction: column;
     padding: 35px;
-    font-size: 12px;
-    background: url(/images/cup.png);
-    background-size: 393px;
-    background-repeat: no-repeat;
-    opacity: .75;
-}
-
-.ice-cream-card {
-    &:hover {
-        opacity: 1;
-    }
-}
-
-.ice-cream-name {
-    font-size: 16.5px;
-    margin-bottom: 30px;
-    margin-top: 29px;
 }
 
 .flavor-img {
@@ -33,3 +16,23 @@
     border-radius: 100%;
 }
 
+
+.parlor-popup {
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 35px;
+    background-color: blue;
+    width: 75%;
+    height: 75%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    overflow: scroll;
+    white-space: nowrap;
+}

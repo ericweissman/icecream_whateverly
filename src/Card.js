@@ -31,6 +31,8 @@ class Card extends Component {
       );
     } else {
       return (
+        <div className='parlor-popup'>
+          <ParlorArea parlors={this.props.parlors} id={this.props.id} getMoreInfo={this.getMoreInfo}/>
         <div className='ice-cream-card'>
           <h1 className="ice-cream-name">{this.props.flavor}</h1>
           <img className="flavor-img" src={`./images/Flavors/${this.props.img}.jpg`} />
