@@ -10,3 +10,15 @@
 @import "Search";
 @import "_variables";
 @import "_mixins";
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+* {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+
+button {
+    margin-top: 20px;
+    font-size: 14px;
+}
