@@ -1,20 +1,18 @@
 
 .ice-cream-card {
     display: flex;
-    /* height: 250px;
-    width: 250px; */
+    height: 290px;
+    width: 320px;
     justify-content: center;
     align-items: center;
     margin: 25px;
     flex-direction: column;
     padding: 35px;
-    background-color: aquamarine;
-    position: relative;
 }
 
 .flavor-img {
-    height: 100px;
-    width: 100px;
+    height: 110px;
+    width: 110px;
     border-radius: 100%;
 }
 
