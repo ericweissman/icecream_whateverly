@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from '../App';
+import App from './App';
 import { shallow } from 'enzyme';
-import Header from '../Header';
-import CardContainer from '../CardContainer';
+import Header from './Header';
+import CardContainer from './CardContainer';
+
 
 const searchForMock = jest.fn();
 const parlors = [{
@@ -72,7 +73,7 @@ describe('App', () => {
       <CardContainer parlors={parlors}
         icecream={icecream}
         search={value} />
-        </div>
+      </div>
     );
   })
 

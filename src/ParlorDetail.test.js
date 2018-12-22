@@ -1,6 +1,6 @@
 import React from 'react';
-import ParlorCard from '../ParlorCard'
-import ParlorDetail from '../ParlorDetail';
+import ParlorCard from './ParlorCard'
+import ParlorDetail from './ParlorDetail';
 import { shallow } from 'enzyme';
 
 const parlors = [{
