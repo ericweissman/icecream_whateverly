@@ -34,3 +34,23 @@
     box-shadow: 0 0 2px 2px grey;
 }
 
+
+.parlor-popup {
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 35px;
+    background-color: blue;
+    width: 75%;
+    height: 75%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    overflow: scroll;
+    white-space: nowrap;
+}

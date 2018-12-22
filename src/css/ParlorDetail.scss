@@ -1,0 +1,26 @@
+.parlor-detail-card {
+  // display: flex;
+  // flex-direction: column;
+}
+
+.parlor-detail-info {
+    position: fixed;
+    z-index: 3;
+    width: 90%;
+    height: 90%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  background-color: red;
+  overflow: scroll;
+  margin: auto;
+  display:flex;
+  flex-direction: column;
+}
+
+.back-to-parlors-btn {
+  height: 70px;
+  width: 100px;
+  padding-bottom: 30px;
+}
