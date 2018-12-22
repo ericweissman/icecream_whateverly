@@ -24,16 +24,16 @@ class Card extends Component {
     if (this.state.moreInfo === false) {
       return (
         <div className='ice-cream-card' id={this.props.id}>
-          <img className="flavor-img" src={`./images/Flavors/${this.props.img}.jpg`} />
           <h1 className="ice-cream-name">{this.props.flavor}</h1>
+          <img className="flavor-img" src={`./images/Flavors/${this.props.img}.jpg`} />
           <button onClick={this.getMoreInfo} className="more-info-btn">More Info</button>
         </div>
       );
     } else {
       return (
         <div className='ice-cream-card'>
-          <img className="flavor-img" src={`./images/Flavors/${this.props.img}.jpg`} />
           <h1 className="ice-cream-name">{this.props.flavor}</h1>
+          <img className="flavor-img" src={`./images/Flavors/${this.props.img}.jpg`} />
           <button onClick={this.getMoreInfo} className="more-info-btn">Less Info</button>
           <ParlorArea parlors={this.props.parlors} id={this.props.id} />
         </div>
