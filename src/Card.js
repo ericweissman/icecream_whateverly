@@ -39,6 +39,7 @@ class Card extends Component {
           <button onClick={this.getMoreInfo} className="more-info-btn">Less Info</button>
           <ParlorArea parlors={this.props.parlors} id={this.props.id} />
         </div>
+        /</div>
       );
     }
   }

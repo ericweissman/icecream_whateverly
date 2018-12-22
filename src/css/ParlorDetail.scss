@@ -1,26 +1,40 @@
 .parlor-detail-card {
-  // display: flex;
-  // flex-direction: column;
-}
-
-.parlor-detail-info {
-    position: fixed;
-    z-index: 3;
-    width: 90%;
-    height: 90%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  background-color: red;
+  position: fixed;
+  z-index: 3;
+  width: 90%;
+  height: 90%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #99ccff;
   overflow: scroll;
   margin: auto;
   display:flex;
   flex-direction: column;
-}
+  align-items: center;
+   a {
+      color: blue;
+      font-size: 30px;
+    }
+    p {
+      line-height: 0px;
+    }
 
-.back-to-parlors-btn {
-  height: 70px;
-  width: 100px;
-  padding-bottom: 30px;
-}
+    img {
+      padding-top: 40px;;
+      width: 220px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    button {
+    height: 70px;
+    width: 100px;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+  }
+ }
