@@ -1,8 +1,8 @@
 
 .ice-cream-card {
     display: flex;
-    height: 335px;
-    width: 265px;
+    height: 370px;
+    width: 249px;
     justify-content: center;
     align-items: center;
     margin: 25px;
@@ -15,12 +15,13 @@
 }
 
 .ice-cream-name {
-    margin-top: 140px;
+    margin-top: 120px;
 }
 
 .flavor-img {
     height: 110px;
     width: 110px;
+    margin-top: -8px;
     border-radius: 100%;
 }
 
