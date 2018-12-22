@@ -4,11 +4,26 @@ exports[`Header should match the snapshot with all data passed in correctly 1`] 
 <header
   className="header"
 >
-  <h1>
-    Home
-  </h1>
-  <Search
-    searchFor={[MockFunction]}
-  />
+  <div
+    className="header-svg-cont"
+  >
+    <img
+      className="header-svg"
+      src={
+        Object {
+          "ReactComponent": [Function],
+          "__esModule": true,
+          "default": "ice-cream.svg",
+        }
+      }
+    />
+  </div>
+  <div
+    className="header-search-cont"
+  >
+    <Search
+      searchFor={[MockFunction]}
+    />
+  </div>
 </header>
 `;
