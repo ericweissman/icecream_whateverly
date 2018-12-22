@@ -1,19 +1,35 @@
 
 .ice-cream-card {
     display: flex;
-    /* height: 250px;
-    width: 250px; */
+    height: 290px;
+    width: 320px;
     justify-content: center;
     align-items: center;
     margin: 25px;
     flex-direction: column;
     padding: 35px;
-    background-color: aquamarine;
+    font-size: 12px;
+    background: url(/images/cup.png);
+    background-size: 393px;
+    background-repeat: no-repeat;
+    opacity: .75;
+}
+
+.ice-cream-card {
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.ice-cream-name {
+    font-size: 16.5px;
+    margin-bottom: 30px;
+    margin-top: 29px;
 }
 
 .flavor-img {
-    height: 100px;
-    width: 100px;
+    height: 110px;
+    width: 110px;
     border-radius: 100%;
 }
 
