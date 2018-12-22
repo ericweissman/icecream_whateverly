@@ -3,7 +3,7 @@ import ParlorCard from './ParlorCard'
 import ParlorDetail from './ParlorDetail';
 import { shallow } from 'enzyme';
 
-const parlors = [{
+const parlor = [{
     "parlorName": "Little Man Ice Cream",
     "description": "Quirky shop for exotic ice cream",
     "address": "2620 16th St, Denver, CO 80211",
@@ -59,10 +59,10 @@ describe('ParlorDetail', () => {
     wrapper = shallow(
       <ParlorDetail parlor={parlor} />
     )
+  // })
+    });
   })
-
-  it('', () => {
+  // it('', () => {
     
-    expect(wrapper).toMatchSnapshot();
-  });
-})
+  //   expect(wrapper).toMatchSnapshot();
+  // });

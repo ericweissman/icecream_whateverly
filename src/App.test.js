@@ -68,12 +68,7 @@ describe('App', () => {
 
   beforeEach(() => {
     wrapper = shallow(
-      <div>
-      <Header searchFor={searchForMock} />
-      <CardContainer parlors={parlors}
-        icecream={icecream}
-        search={value} />
-      </div>
+      <App/>
     );
   })
 
@@ -82,6 +77,9 @@ describe('App', () => {
   });
 
   it('should have a proper default state', () => {
-    expect(wrapper.state()).toEqual({ value: ''})
+    expect(wrapper.state()).toEqual({
+      parlors: [],
+      icecream: {},
+      value: ''})
   })
 })

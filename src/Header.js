@@ -5,6 +5,7 @@ import { uid } from 'react-uid';
 import Card from './Card.js';
 import Search from './Search.js';
 
+
 class Header extends Component {
   constructor() {
     super();
@@ -12,8 +13,12 @@ class Header extends Component {
     render() {
       return (
         <header className="header">
-          <h1>Home</h1>
-          <Search searchFor={this.props.searchFor}/>
+          <div className="header-svg-cont">
+            <img className="header-svg" src={require('./css/images/ice-cream.svg')}/>
+          </div>
+          <div className="header-search-cont">
+            <Search searchFor={this.props.searchFor}/>
+          </div>
         </header>
       );
     }
