@@ -1,6 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
 
 .title {
-    font-family: 'Pacifico', cursive;
-    font-size: 40px;
+    font-family: 'Lobster', cursive;
+    font-size: 75px;
 }
