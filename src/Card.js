@@ -31,11 +31,8 @@ class Card extends Component {
       );
     } else {
       return (
-        <div className='ice-cream-card'>
-          <img className="flavor-img" src={`./images/Flavors/${this.props.img}.jpg`} />
-          <h1 className="ice-cream-name">{this.props.flavor}</h1>
-          <button onClick={this.getMoreInfo} className="more-info-btn">Less Info</button>
-          <ParlorArea parlors={this.props.parlors} id={this.props.id} />
+        <div className='parlor-popup'>
+          <ParlorArea parlors={this.props.parlors} id={this.props.id} getMoreInfo={this.getMoreInfo}/>
         </div>
       );
     }

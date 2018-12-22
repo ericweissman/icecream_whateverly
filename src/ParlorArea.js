@@ -12,8 +12,9 @@ class ParlorArea extends Component {
   };
 
   render() {
-    return (
+    return ( 
       <div className="parlor-area">
+        <button onClick={this.props.getMoreInfo} className="more-info-btn">Back To All Flavors</button>
         {
           this.props.parlors.filter((parlor) => {
             return parlor.flavors.includes(parseInt(this.props.id))
@@ -24,8 +25,8 @@ class ParlorArea extends Component {
               />
             )
           })
-        }
-      </div>    
+        } 
+      </div>
       )
     };
   }
