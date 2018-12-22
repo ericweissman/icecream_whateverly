@@ -11,11 +11,20 @@
 }
 
 .parlor-card {
-  border: white 2px solid;
-  margin: 0px 10px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  line-height: 75%;
+  flex-direction: column;
+  border: black 2px solid;
+  margin: 5px 15px;
+  padding: 5px;
+}
 
+.parlor-name {
+  font-weight: 600;
+}
 
-.parlor-card {
-    background-color: blue;
-    // background-image: url("public/images/blank-icecream-cup.jpeg");
+.parlor-details {
+  text-align: center;
 }

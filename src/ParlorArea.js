@@ -13,21 +13,21 @@ class ParlorArea extends Component {
 
   render() {
     return ( 
-      <div  className="parlor-area">
-        <button onClick={this.props.getMoreInfo} className="more-info-btn">Back To All Flavors</button>
+      <div className="parlor-area">
         <div className="parlor-list">
           {
             this.props.parlors.filter((parlor) => {
               return parlor.flavors.includes(parseInt(this.props.id))
             })
-              .map((parlor) => {
-                return (
+            .map((parlor) => {
+              return (
                 <ParlorCard parlor={parlor}
                 />
-              )
-            })
-          } 
+                )
+              })
+            } 
         </div>
+            <button onClick={this.props.getMoreInfo} className="back-to-all-flavors">Back To All Flavors</button>
       </div>
       )
     };
