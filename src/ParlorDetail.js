@@ -15,27 +15,25 @@ class ParlorDetail extends Component {
     render() {
         return (
         <div className="parlor-detail-card">
-            <div className="parlor-detail-photo">
-                <img src= "public/images/Little Man Ice Cream.png" />
-            </div>
-            <div className="parlor-detail-info">
-                <p>{this.props.parlor.parlorName}</p>
-                <p>{this.props.parlor.address}</p>
-                {
-                    this.props.parlor.daysOpen.map((day) => {
-                        return (
-                            <div className="parlor-detail-hours">
-                                <p>{day.day}: {day.open} - {day.close}</p>
-                            </div>
-                        )
-                    })
-                }
-                <p>{this.props.parlor.phoneNumber}</p>
-                <a href={this.props.parlor.website}>{this.props.parlor.parlorName}</a>
-                <p>Rating: {this.props.parlor.review}</p>
-                <p>Number of Flavors: {this.props.parlor.numberOfFlavors}</p>
-                <button className="back-to-parlors-btn" onClick={this.props.getParlorDetails}>Back To Parlors</button>
-            </div>
+            <img src={`./images/Parlors/${this.props.parlor.parlorName}.png`}/>
+            <a href={this.props.parlor.website}>{this.props.parlor.parlorName}</a>
+            <p>{this.props.parlor.phoneNumber}</p>
+            <p>{this.props.parlor.address}</p>
+            <ul>
+                <li>HOURS</li>
+                    {
+                        this.props.parlor.daysOpen.map((day) => {
+                            return (
+                                <div>
+                                    <li>{day.day}: {day.open} - {day.close}</li>
+                                </div>
+                            )
+                        })
+                    }
+            </ul>
+            <p>Rating: {this.props.parlor.review}</p>
+            <p>Number of Flavors: {this.props.parlor.numberOfFlavors}</p>
+            <button className="back-to-parlors-btn" onClick={this.props.getParlorDetails}>Back To Parlors</button>
         </div>
         )
     }
