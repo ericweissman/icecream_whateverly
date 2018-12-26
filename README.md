@@ -1,44 +1,36 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# iScream
+#### A web-based React app that allows users to find the best ice cream flavors and parlors around Denver, CO.
 
-## Available Scripts
+## Installation Steps
+Clone the repo: ```git clone https://github.com/ericweissman/icecream_whateverly.git```
+Install dependencies: ```npm install```
+Start Local Host: ```npm start```
+For testing suite: ```npm test```
 
-In the project directory, you can run:
+## Background/About
+#### iScream was the first project our contributors built using React. After creating a large dataset on ice cream flavors and parlors, we utilized the Fetch API call to import data that we would use for the app. The app allows users to easily see all of the ice cream flavors available throughout Denver. Once a user clicks on a flavor, they can see all the parlors (along with their address) where the ice cream is available. If a user clicks on an individual parlor, they are shown a more detailed page that includes all relevant information for the given parlor. By utilizing small components for the ice cream cards, parlors, and parlor details, our users can easily and intuitively navigate between flavors and parlors! 
 
-### `npm start`
+## Primary Technologies Used
+- React
+- SCSS
+- Jest
+- Enzyme
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Next Steps
+#### Future iterations of the project could include:
+- Search functionality for parlors
+- Only show parlors/flavors that are available based on user's local time
+- Ability for users to favorite flavors and/or parlors
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Wireframe & Screenshots
+#### Wireframes
+https://github.com/ericweissman/icecream_whateverly/blob/master/Reference/new-icecream-whateverly-wireframe.png?raw=true
 
-### `npm test`
+#### Screenshots
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Contributors
+[Heather Hartley](https://github.com/hlhartley)
 
-### `npm run build`
+[Eric Weissman](https://github.com/ericweissman)
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+[Tom Wilhoit](https://github.com/TomWilhoit)
