@@ -21,6 +21,11 @@ exports[`Header should match the snapshot with all data passed in correctly 1`] 
   <div
     className="header-search-cont"
   >
+    <header
+      className="title"
+    >
+      iScream
+    </header>
     <Search
       searchFor={[MockFunction]}
     />

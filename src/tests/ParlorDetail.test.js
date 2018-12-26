@@ -1,6 +1,6 @@
 import React from 'react';
-import ParlorCard from './ParlorCard'
-import ParlorDetail from './ParlorDetail';
+import ParlorCard from '../ParlorCard'
+import ParlorDetail from '../ParlorDetail';
 import { shallow } from 'enzyme';
 
 const parlor = [{
@@ -52,17 +52,16 @@ const parlor = [{
     "review": 4.7
   }]
 
+let wrapper;
+
 describe('ParlorDetail', () => {
-  let wrapper;
 
   beforeEach(() => {
     wrapper = shallow(
       <ParlorDetail parlor={parlor} />
-    )
-  // })
+      )
     });
   })
-  // it('', () => {
-    
-  //   expect(wrapper).toMatchSnapshot();
-  // });
+  it('should match snapshot when all data is passed correctly', () => {
+    expect(wrapper).toMatchSnapshot();
+  });
