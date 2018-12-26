@@ -17,10 +17,10 @@ class ParlorDetail extends Component {
         <div className="parlor-detail-card">
             <img src={`./images/Parlors/${this.props.parlor.parlorName}.png`}/>
             <a href={this.props.parlor.website}>{this.props.parlor.parlorName}</a>
+            <p className='parlor-address'>{this.props.parlor.address}</p>
             <p>{this.props.parlor.phoneNumber}</p>
-            <p>{this.props.parlor.address}</p>
             <ul>
-                <li>HOURS</li>
+                <li className='bold'>HOURS</li>
                     {
                         this.props.parlor.daysOpen.map((day) => {
                             return (
@@ -34,6 +34,7 @@ class ParlorDetail extends Component {
             <p>Rating: {this.props.parlor.review}</p>
             <p>Number of Flavors: {this.props.parlor.numberOfFlavors}</p>
             <button className="back-to-parlors-btn" onClick={this.props.getParlorDetails}>Back To Parlors</button>
+        
         </div>
         )
     }
