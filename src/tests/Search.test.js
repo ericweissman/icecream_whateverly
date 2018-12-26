@@ -1,5 +1,5 @@
 import React from 'react';
-import Search from './Search';
+import Search from '../Search';
 import { shallow } from 'enzyme';
 
 const searchForMock = jest.fn();
