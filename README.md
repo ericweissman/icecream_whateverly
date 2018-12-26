@@ -24,7 +24,7 @@ For testing suite: ```npm test```
 
 ## Wireframe & Screenshots
 #### Wireframes
-https://github.com/ericweissman/icecream_whateverly/blob/master/Reference/new-icecream-whateverly-wireframe.png?raw=true
+![new-icecream-whateverly-wireframe](https://user-images.githubusercontent.com/20710327/50453475-70e4b000-0906-11e9-9505-1a15e18e11f2.png)
 
 #### Screenshots
 
