@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 
 .header {
-    display: flex;
     // flex-direction: column;
     font-size: 50px;
+    height: 280px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #ffc8c8;
-    border-bottom: 2px solid black;
     padding: 50px;
 }
 
