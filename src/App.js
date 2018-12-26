@@ -11,9 +11,7 @@ class App extends Component {
     this.state = {
       parlors: [],
       icecream: {},
-      value: '',
-
-      error: null,
+      value: ''
     }
     
   }
