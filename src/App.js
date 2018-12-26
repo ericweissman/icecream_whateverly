@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import CardContainer from './CardContainer.js'
-import Header from './Header'
+import CardContainer from './CardContainer.js';
+import Header from './Header';
+import Banner from './Banner';
 import './css/Main.scss';
 
 class App extends Component {
@@ -10,8 +11,10 @@ class App extends Component {
     this.state = {
       parlors: [],
       icecream: {},
-      value: ''
-      }
+      value: '',
+
+      error: null,
+    }
     
   }
   componentDidMount() {
@@ -21,7 +24,10 @@ class App extends Component {
         this.setState({
           parlors: result.parlors
         })
-      }).catch(err => alert('Loading'))
+      })
+      .catch(err => {
+        this.setState({error: err})
+      })
 
     fetch("https://whateverly-datasets.herokuapp.com/api/v1/flavors")
       .then(results => results.json())
@@ -29,7 +35,10 @@ class App extends Component {
         this.setState({
           icecream: result.flavors
         })
-      }).catch(err => alert('Loading'))
+      })
+      .catch(err => {
+        this.setState({error: err})
+      })
   }
 
   searchFor = (event) => {
@@ -41,9 +50,11 @@ class App extends Component {
       <div className="App">
         <div>
           <Header searchFor={this.searchFor}/>
+          <Banner />
           <CardContainer parlors={this.state.parlors} 
                         icecream={this.state.icecream}
                         search={this.state.value}/>
+          {/* <ErrorMessage /> */}
         </div>
       </div>
     );

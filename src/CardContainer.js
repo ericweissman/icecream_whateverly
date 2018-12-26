@@ -7,7 +7,6 @@ import Card from './Card.js'
 class CardContainer extends Component {
   constructor(props) {
     super(props)
-
   };
 
   render() {
@@ -19,11 +18,12 @@ class CardContainer extends Component {
             const flavor = this.props.icecream[key].name.toLowerCase()
             if (flavor.includes(this.props.search.toLowerCase())) {
               return (
-                <Card id={key}
-                img={key}
-                flavor={this.props.icecream[key].name}
-                info={this.props.icecream[key].description}
-                parlors={this.props.parlors}
+                <Card 
+                  id={key}
+                  img={key}
+                  flavor={this.props.icecream[key].name}
+                  info={this.props.icecream[key].description}
+                  parlors={this.props.parlors}
                 />
             )}
           })
