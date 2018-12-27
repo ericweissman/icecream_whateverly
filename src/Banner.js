@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import App from './App.js';
 import './css/Banner.scss';
 
 const Banner = () => {

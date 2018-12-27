@@ -2,7 +2,7 @@
 
 .parlor-detail-card {
   align-items: center;
-  background-color: #FFF;
+  background-color: $light-yellow;
   border: 2px solid black;
   bottom: 0;
   display:flex;
@@ -36,7 +36,7 @@
       line-height: 100%;
     }
     button {
-      height: 50px;
+      height: 30px;
       margin-bottom: 40px;
       padding-bottom: 30px;
       width: 140px;

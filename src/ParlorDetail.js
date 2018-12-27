@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import App from './App.js';
 import './css/Main.scss';
-import ParlorCard from './ParlorCard.js';
 
 class ParlorDetail extends Component {
     constructor(props) {
@@ -33,7 +31,7 @@ class ParlorDetail extends Component {
             </ul>
             <p>Rating: {this.props.parlor.review}</p>
             <p>Number of Flavors: {this.props.parlor.numberOfFlavors}</p>
-            <button className="back-to-parlors-btn" onClick={this.props.getParlorDetails}>Back To Parlors</button>
+            <button onClick={this.props.getParlorDetails}>Back To Parlors</button>
         
         </div>
         )

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import App from './App.js';
 import './css/Main.scss';
 
 class Search extends Component {
@@ -14,7 +13,6 @@ class Search extends Component {
           <input type='text' placeholder="Search flavors" className='search-input' onChange={this.props.searchFor}></input>
         </i>
       </div>
-
     )
   }
 }
