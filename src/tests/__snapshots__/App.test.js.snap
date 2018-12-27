@@ -6,13 +6,16 @@ exports[`App should match the snapshot with all data passed in correctly 1`] = `
 >
   <div>
     <Header
+      parlors={Array []}
       searchFor={[Function]}
+      searchParlor={[Function]}
     />
     <Banner />
     <CardContainer
       icecream={Object {}}
       parlors={Array []}
       search=""
+      searchByParlor=""
     />
   </div>
 </div>

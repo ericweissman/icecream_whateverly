@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../Header.js';
+import SearchByParlor from '../SearchByParlor';
 import { shallow } from 'enzyme';
 
 const parlors = [
@@ -51,24 +51,21 @@ const parlors = [
     "priceRange": "$",
     "review": 4.7
   }]
-const searchForMock = jest.fn();
+
 const searchParlorMock = jest.fn();
 
-describe('Header', () => {
+describe('SearchByParlor', () => {
   let wrapper;
 
   beforeEach(() => {
     wrapper = shallow(
-      <Header
-        searchFor={searchForMock}
-        searchParlor={searchParlorMock}
-        parlors={parlors}
-      />
-    );
+      <SearchByParlor parlors={parlors} 
+                      searchParlor={searchParlorMock} />
+    )
   })
 
-  it('should match the snapshot with all data passed in correctly', () => {
-    expect(wrapper).toMatchSnapshot();
-  });
-
+  it('should call searchParlor when the dropdown is manipulated', () => {
+    wrapper.find('.search-parlor').simulate('change', { target: { value: '' } });
+    expect(searchParlorMock).toBeCalled();
+  })
 })
