@@ -40,7 +40,7 @@
     position: fixed;
     right: 0;
     top: 0;
-    white-space: nowrap;
+    // white-space: nowrap;
     width: 75%;
     z-index: 2;
     .icecream-description {
@@ -51,12 +51,13 @@
         font-size: 40px;
     }
 }
-    .flavor-img, .popup-flavor-img {
-        border-radius: 100%;
-        box-shadow: 0 0 2px 2px $grey;
-        height: 110px;
-        width: 110px;
-    }
+
+.flavor-img, .popup-flavor-img {
+    border-radius: 100%;
+    box-shadow: 0 0 2px 2px $grey;
+    height: 110px;
+    width: 110px;
+}
 
 
 
