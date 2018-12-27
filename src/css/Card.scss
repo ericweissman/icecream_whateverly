@@ -21,7 +21,7 @@
     }
 }
 .big-ice-cream-name {
-    margin-top: 250px;
+    margin-top: 50px;
     margin-left: 25px;
     font-size: 40px;
 }
@@ -40,18 +40,18 @@
 }
 
 .popup-flavor-img {
-    margin-top: 230px;
+    margin-top: 25px;
 }
 
 .parlor-popup {
     display: flex;
     position: fixed;
     z-index: 2;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 35px;
-    background-color: #c5ada3;
+    background-color: #ffd8d8;
     width: 75%;
     height: 80%;
     top: 0;

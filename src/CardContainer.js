@@ -9,25 +9,43 @@ class CardContainer extends Component {
     super(props)
   };
 
+  allFlavors() {
+    return Object.keys(this.props.icecream);
+  }
+
+  parlorFlavorsToRender() {
+    const foundParlor = this.props.parlors.find((parlor) => {
+      return parlor.parlorName === this.props.searchByParlor
+    });
+
+    if (foundParlor) {
+      return foundParlor.flavors;
+    }
+    return [];
+  }
+
   render() {
-    const keys = Object.keys(this.props.icecream);
+    let flavorsToRender = this.allFlavors();
+    if(this.props.searchByParlor && this.props.searchByParlor !== "show all") {
+      flavorsToRender = this.parlorFlavorsToRender();
+    }
     return (
       <div className="card-container">
-        {
-          keys.map((key) => {
-            const flavor = this.props.icecream[key].name.toLowerCase()
-            if (flavor.includes(this.props.search.toLowerCase())) {
-              return (
-                <Card 
-                  id={key}
-                  img={key}
-                  flavor={this.props.icecream[key].name}
-                  info={this.props.icecream[key].description}
-                  parlors={this.props.parlors}
-                />
-            )}
-          })
-        }
+       {flavorsToRender.map((flavor) => {
+          const flavorName = this.props.icecream[flavor].name.toLowerCase()
+          if (flavorName.includes(this.props.search.toLowerCase())) {
+            return (
+              <Card
+                id={flavor}
+                img={flavor} 
+                flavor={this.props.icecream[flavor].name}
+                info={this.props.icecream[flavor].description}
+                parlors={this.props.parlors}
+              />
+            )
+          }
+       })
+      }
       </div>
     )
   }
