@@ -1,21 +1,21 @@
 @import '_variables.scss';
 
 .banner-center {
-    display: flex;
     align-items: center;
-    margin-top: -16px;
+    background-color: $white-primary-color;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
-    background-color: $white-primary-color;
+    display: flex;
     height: 500px;
+    margin-top: -16px;
 }
 
 .banner-text {
-    padding: 10px;
     font-size: 17px;
+    padding: 10px;
 }
 
 .cones-img {
-    width: 900px;
     height: 500px;
+    width: 900px;
 }

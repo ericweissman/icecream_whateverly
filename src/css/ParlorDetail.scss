@@ -1,33 +1,33 @@
 @import '_variables.scss';
 
 .parlor-detail-card {
-  position: fixed;
-  z-index: 3;
-  width: 90%;
-  height: 90%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  align-items: center;
   background-color: #FFF;
   border: 2px solid black;
-  overflow: scroll;
-  margin: auto;
+  bottom: 0;
   display:flex;
   flex-direction: column;
-  align-items: center;
+  height: 90%;
+  left: 0;
+  margin: auto;
+  overflow: scroll;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 90%;
+  z-index: 3;
    a {
       color: $turquoise-primary-color;
-      font-weight: 600;
       font-size: 30px;
+      font-weight: 600;
     }
     p {
       line-height: 0px;
     }
 
     img {
-      padding-top: 25px;
       padding-bottom: 25px;
+      padding-top: 25px;
       width: 220px;
     }
 
@@ -39,10 +39,10 @@
       line-height: 100%;
     }
     button {
-    height: 50px;
-    width: 140px;
-    padding-bottom: 30px;
-    margin-bottom: 40px;
+      height: 50px;
+      margin-bottom: 40px;
+      padding-bottom: 30px;
+      width: 140px;
   }
   .bold {
     font-weight: 600;

@@ -1,8 +1,8 @@
 @import '_variables.scss';
 
 .App {
-  text-align: center;
   position: relative;
+  text-align: center;
 }
 
 // .App-logo {
@@ -11,14 +11,14 @@
 // }
 
 .App-header {
+  align-items: center;
   background-color: #282c34;
-  min-height: 100vh;
+  color: #FFF;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #FFF;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .App-link {
