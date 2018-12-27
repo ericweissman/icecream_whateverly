@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import App from './App.js';
 import './css/Main.scss';
-import { uid } from 'react-uid';
 import ParlorDetail from './ParlorDetail.js'
-
-// import images from './images/';
 
 class ParlorCard extends Component {
   constructor(props) {
@@ -25,7 +22,7 @@ class ParlorCard extends Component {
     if (this.state.details === false) {
       return (
           <div className='parlor-card'>
-            <p className='parlor-name'>{this.props.parlor.parlorName}</p>
+            <p className='parlor-name bold'>{this.props.parlor.parlorName}</p>
             <p>{this.props.parlor.address}</p>
             <button className="parlor-details" onClick={this.getParlorDetails}>Parlor Details</button>
           </div>
@@ -39,6 +36,6 @@ class ParlorCard extends Component {
       )
     }
   }
-
 }
+
 export default ParlorCard;

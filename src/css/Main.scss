@@ -15,9 +15,17 @@
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 
 * {
-    font-family: 'Titillium Web', sans-serif;
+    font-family: $main-font;
     font-size: 20px;
     letter-spacing: 2px;
+}
+
+.bold {
+    font-weight: $bold;
+}
+
+.italic {
+    font-style: italic;
 }
 
 button {

@@ -7,10 +7,6 @@ class Search extends Component {
     super()
   }
 
-  scrollDown() {
-    window.scrollTo(0, 1200);
-  }
-
   render() {
     return (
       <div className='search'>
@@ -22,6 +18,5 @@ class Search extends Component {
     )
   }
 }
-
 
 export default Search;

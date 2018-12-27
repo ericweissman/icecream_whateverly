@@ -60,11 +60,12 @@ class App extends Component {
             parlors={this.state.parlors}
           />
           <Banner />
-          <CardContainer parlors={this.state.parlors} 
-                        icecream={this.state.icecream}
-                        search={this.state.value}
-                        searchByParlor={this.state.searchByParlor}/>
-          {/* <ErrorMessage /> */}
+          <CardContainer 
+            parlors={this.state.parlors} 
+            icecream={this.state.icecream}
+            search={this.state.value}
+            searchByParlor={this.state.searchByParlor}
+          />
         </div>
       </div>
     );

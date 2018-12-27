@@ -9,17 +9,17 @@
     height: 23px;
     justify-content: center;
     padding: 50px;
+    .title {
+        color: $turquoise-primary-color;
+        font-family: $title-font;
+        font-size: 66px;
+        margin-right: 350px;
+    }
+    .header-svg {
+        height: 84px;
+        margin-top: -15px;
+    }
 }
 
-.title {
-    color: $turquoise-primary-color;
-    font-family: 'Lobster', cursive;
-    font-size: 66px;
-    margin-right: 350px;
-}
 
-.header-svg {
-    height: 84px;
-    margin-top: -15px;
-}
 
