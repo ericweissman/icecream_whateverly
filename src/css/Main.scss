@@ -12,7 +12,6 @@
 @import "_variables";
 @import "_mixins";
 @import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
-
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 
 * {
@@ -27,13 +26,13 @@ button {
     font-size: 14px;
     border-radius: 15px;
     padding: 4.5px;
-    background-color: rgb(242, 242, 242);
+    background-color: #FFF;
 }
 
 button {
     &:hover {
         cursor: pointer;
-        background-color: rgb(123, 103, 103);
-        color: white;
+        background-color: $light-brown;
+        color: #FFF;
     }
 }

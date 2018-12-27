@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
+@import '_variables.scss';
 
 .header-search-cont {
     font-size: 50px;
@@ -6,13 +7,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffc8c8;
+    background-color: $pink-primary-color;
     padding: 50px;
 }
 
 .title {
     font-family: 'Lobster', cursive;
-    color: #00d6db;
+    color: $turquoise-primary-color;
     font-size: 66px;
     margin-right: 350px;
 }

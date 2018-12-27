@@ -1,3 +1,4 @@
+@import '_variables.scss';
 
 .popup_inner {
   position: absolute;
@@ -6,14 +7,14 @@
   top: 25%;
   bottom: 25%;
   margin: auto;
-  background: white;
+  background: #FFF;
 
 }
 
 .parlor-card {
   display: flex;
   align-items: center;
-  background-color: #f2f1f8;
+  background-color: $white-primary-color;
   line-height: 75%;
   flex-direction: column;
   border: black 2px solid;

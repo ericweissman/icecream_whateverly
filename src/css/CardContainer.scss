@@ -1,7 +1,9 @@
+@import '_variables.scss';
+
 .card-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
-    background-color: #b0cce8;
+    background-color: $light-blue;
     margin: auto;
     padding-top: 100px;
   }
