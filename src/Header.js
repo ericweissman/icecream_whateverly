@@ -14,10 +14,8 @@ class Header extends Component {
   render() {
     return (
       <header className="header">
-        {/* <div className="header-svg-cont">
-        </div> */}
-        <div className="header-search-cont">
 
+        <div className="header-search-cont">
           <img className="header-svg" src={require('./css/images/ice-cream.svg')}/>
         <header className="title">iScream</header>
   
