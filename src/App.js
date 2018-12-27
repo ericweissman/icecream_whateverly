@@ -3,6 +3,7 @@ import CardContainer from './CardContainer.js';
 import Header from './Header';
 import Banner from './Banner';
 import './css/Main.scss';
+import SearchByParlor from './SearchByParlor';
 
 class App extends Component {
   constructor() {
@@ -11,7 +12,8 @@ class App extends Component {
     this.state = {
       parlors: [],
       icecream: {},
-      value: ''
+      value: '',
+      searchByParlor: ''
     }
     
   }
@@ -43,15 +45,24 @@ class App extends Component {
     this.setState({value: event.target.value})
   }
 
+  searchParlor = (event) => {
+    this.setState({searchByParlor: event.target.value})
+  }
+
   render() {
     return (
       <div className="App">
         <div>
-          <Header searchFor={this.searchFor}/>
+          <Header 
+            searchFor={this.searchFor}
+            searchParlor={this.searchParlor} 
+            parlors={this.state.parlors}
+          />
           <Banner />
           <CardContainer parlors={this.state.parlors} 
                         icecream={this.state.icecream}
-                        search={this.state.value}/>
+                        search={this.state.value}
+                        searchByParlor={this.state.searchByParlor}/>
           {/* <ErrorMessage /> */}
         </div>
       </div>

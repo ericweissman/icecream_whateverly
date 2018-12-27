@@ -7,14 +7,16 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #99ccff;
+  background-color: #fff8de;
+  border: 2px solid black;
   overflow: scroll;
   margin: auto;
   display:flex;
   flex-direction: column;
   align-items: center;
    a {
-      color: blue;
+      color: #00dadd;
+      font-weight: 600;
       font-size: 30px;
     }
     p {
@@ -22,7 +24,8 @@
     }
 
     img {
-      padding-top: 40px;;
+      padding-top: 25px;
+      padding-bottom: 25px;
       width: 220px;
     }
 
@@ -30,11 +33,19 @@
       list-style: none;
       padding: 0;
     }
-
+    li {
+      line-height: 100%;
+    }
     button {
-    height: 70px;
-    width: 100px;
+    height: 50px;
+    width: 140px;
     padding-bottom: 30px;
     margin-bottom: 40px;
+  }
+  .bold {
+    font-weight: 600;
+  }
+  .parlor-address {
+    font-style: italic;
   }
  }

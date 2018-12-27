@@ -13,17 +13,17 @@
 .parlor-card {
   display: flex;
   align-items: center;
-  background-color: white;
+  background-color: #f2f1f8;
   line-height: 75%;
   flex-direction: column;
   border: black 2px solid;
-  margin: 5px 15px;
+  margin: 10px 15px;
   padding: 5px;
+  width: 750px;
 }
 
 .parlor-name {
   font-weight: 600;
-  border: white 2px solid;
   margin: 0px 10px;
 }
 
