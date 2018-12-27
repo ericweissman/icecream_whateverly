@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search should match snapshot when all data is passed correctly 1`] = `
+<div
+  className="search"
+>
+  <i
+    className="fas fa-search"
+  >
+    <input
+      className="search-input"
+      onChange={[MockFunction]}
+      placeholder="search flavors"
+      type="text"
+    />
+  </i>
+</div>
+`;

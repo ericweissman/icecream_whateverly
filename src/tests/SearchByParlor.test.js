@@ -64,6 +64,10 @@ describe('SearchByParlor', () => {
     )
   })
 
+  it('should match snapshot when all data is passed correctly', () => {
+    expect(wrapper).toMatchSnapshot();
+  })
+
   it('should call searchParlor when the dropdown is manipulated', () => {
     wrapper.find('.search-parlor').simulate('change', { target: { value: '' } });
     expect(searchParlorMock).toBeCalled();

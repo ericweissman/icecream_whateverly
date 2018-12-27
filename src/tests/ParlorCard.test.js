@@ -69,4 +69,5 @@ describe('ParlorCard', () => {
       wrapper.find('.parlor-details').simulate('click', { details: false})
       expect(wrapper.state('details')).toEqual(true)
   })
+
 })

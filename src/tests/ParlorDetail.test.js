@@ -1,5 +1,4 @@
 import React from 'react';
-import ParlorCard from '../ParlorCard'
 import ParlorDetail from '../ParlorDetail';
 import { shallow } from 'enzyme';
 
@@ -52,16 +51,24 @@ const parlor = [{
     "review": 4.7
   }]
 
-let wrapper;
+const getParlorDetailsMock = jest.fn()
 
 describe('ParlorDetail', () => {
+  let wrapper;
 
   beforeEach(() => {
     wrapper = shallow(
-      <ParlorDetail parlor={parlor} />
+      <ParlorDetail parlor={parlor}
+                    getParlorDetails={getParlorDetailsMock} />
       )
     });
-  })
+
   it('should match snapshot when all data is passed correctly', () => {
     expect(wrapper).toMatchSnapshot();
   });
+  
+  it('should call the getParlorDetails method when the Back to Parlors button is clicked', () => {
+    wrapper.find('.back-to-parlors-btn').simulate('click');
+    expect(getParlorDetailsMock).toBeCalled();
+  });
+})
