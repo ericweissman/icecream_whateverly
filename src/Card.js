@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import App from './App.js';
 import './css/Main.scss';
-import { uid } from 'react-uid'
 import ParlorArea from './ParlorArea.js';
-// import images from './images/';
 
 class Card extends Component {
   constructor(props) {
