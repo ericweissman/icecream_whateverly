@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import App from './App.js';
 import './css/Main.scss';
-import { uid } from 'react-uid'
 import ParlorArea from './ParlorArea.js';
-// import images from './images/';
 
 class Card extends Component {
   constructor(props) {
@@ -32,10 +29,9 @@ class Card extends Component {
     } else {
       return (
           <div className='parlor-popup'>
-            <div className="parlor-details">
             <img className="popup-flavor-img" src={`./images/Flavors/${this.props.img}.jpg`} />
             <h1 className="big-ice-cream-name">{this.props.flavor}</h1>
-            </div>
+            <p className='icecream-description'>{this.props.info}</p>
             <ParlorArea parlors={this.props.parlors} id={this.props.id} getMoreInfo={this.getMoreInfo}/>
           </div>
       );

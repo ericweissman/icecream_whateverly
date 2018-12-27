@@ -1,5 +1,12 @@
+@import '_variables.scss';
+
 .banner-center {
+    align-items: center;
+    background-color: $white-primary-color;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
     display: flex;
+<<<<<<< HEAD
     align-items: center;
     margin-top: -16px;
     border-bottom: 1px solid black;
@@ -16,3 +23,19 @@
     width: 900px;
     height: 330px;
 }
+=======
+    height: 500px;
+    margin-top: -16px;
+    .banner-text {
+        font-size: 17px;
+        padding: 10px;
+    }
+    .cones-img {
+        height: 500px;
+        width: 900px;
+    }
+}
+
+    
+    
+>>>>>>> 2a92d4c6f21b849ce00ce5bacc1c8b106ee21560

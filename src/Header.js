@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import App from './App.js';
 import './css/Main.scss';
-import { uid } from 'react-uid';
-import Card from './Card.js';
 import Search from './Search.js';
 import SearchByParlor from './SearchByParlor';
 
@@ -10,6 +7,7 @@ import SearchByParlor from './SearchByParlor';
 class Header extends Component {
   constructor() {
     super();
+<<<<<<< HEAD
   }
   render() {
     return (
@@ -25,6 +23,21 @@ class Header extends Component {
       </header>
     );
   }
+=======
+  }
+  render() {
+    return (
+      <header className="header">
+        <div className="header-search-cont">
+          <img className="header-svg" src={require('./css/images/ice-cream.svg')}/>
+          <header className="title">iScream</header>
+          <Search searchFor={this.props.searchFor}/>
+          <SearchByParlor parlors={this.props.parlors} searchParlor={this.props.searchParlor}/>
+        </div>
+      </header>
+    );
+  }
+>>>>>>> 2a92d4c6f21b849ce00ce5bacc1c8b106ee21560
 }
 
 
