@@ -1,34 +1,33 @@
+@import '_variables.scss';
+
 .parlor-detail-card {
-  position: fixed;
-  z-index: 3;
-  width: 90%;
-  height: 90%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #fff8de;
+  align-items: center;
+  background-color: $light-yellow;
   border: 2px solid black;
-  overflow: scroll;
-  margin: auto;
+  bottom: 0;
   display:flex;
   flex-direction: column;
-  align-items: center;
+  height: 90%;
+  left: 0;
+  margin: auto;
+  overflow: scroll;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 90%;
+  z-index: 3;
    a {
-      color: #00dadd;
-      font-weight: 600;
+      color: $turquoise-primary-color;
       font-size: 30px;
     }
     p {
       line-height: 0px;
     }
-
     img {
-      padding-top: 25px;
       padding-bottom: 25px;
+      padding-top: 25px;
       width: 220px;
     }
-
     ul {
       list-style: none;
       padding: 0;
@@ -37,15 +36,9 @@
       line-height: 100%;
     }
     button {
-    height: 50px;
-    width: 140px;
-    padding-bottom: 30px;
-    margin-bottom: 40px;
-  }
-  .bold {
-    font-weight: 600;
-  }
-  .parlor-address {
-    font-style: italic;
+      height: 30px;
+      margin-bottom: 40px;
+      padding-bottom: 30px;
+      width: 140px;
   }
  }

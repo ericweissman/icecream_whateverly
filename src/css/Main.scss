@@ -12,28 +12,35 @@
 @import "_variables";
 @import "_mixins";
 @import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
-
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 
 * {
-    font-family: 'Titillium Web', sans-serif;
-    letter-spacing: 2px;
+    font-family: $main-font;
     font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.bold {
+    font-weight: $bold;
+}
+
+.italic {
+    font-style: italic;
 }
 
 button {
-    margin-top: 7px;
-    margin-left: 5px;
-    font-size: 14px;
+    background-color: #FFF;
     border-radius: 15px;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-top: 7px;
     padding: 4.5px;
-    background-color: rgb(242, 242, 242);
 }
 
 button {
     &:hover {
+        background-color: $light-brown;
+        color: #FFF;
         cursor: pointer;
-        background-color: rgb(123, 103, 103);
-        color: white;
     }
 }

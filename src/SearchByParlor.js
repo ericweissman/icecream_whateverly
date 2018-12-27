@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import App from './App.js';
 import './css/Main.scss';
 
 const SearchByParlor = (props) => {
@@ -7,7 +6,7 @@ const SearchByParlor = (props) => {
     return (
         <div className="SearchByParlor">
             <select className="search-parlor" onChange={props.searchParlor}>
-                <option value="" selected disabled hidden>Select Parlor</option>
+                <option value="" selected disabled hidden>Select parlor</option>
                 <option value="show all">Show All Parlors</option>
                 {parlors.map((parlor) => {
                     return (

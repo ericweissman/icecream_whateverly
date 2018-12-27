@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import App from './App.js';
-import { uid } from 'react-uid';
 import './css/Main.scss';
-import Card from './Card.js';
 import ParlorCard from './ParlorCard.js';
 
 class ParlorArea extends Component {

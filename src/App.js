@@ -3,7 +3,6 @@ import CardContainer from './CardContainer.js';
 import Header from './Header';
 import Banner from './Banner';
 import './css/Main.scss';
-import SearchByParlor from './SearchByParlor';
 
 class App extends Component {
   constructor() {
@@ -47,6 +46,7 @@ class App extends Component {
 
   searchParlor = (event) => {
     this.setState({searchByParlor: event.target.value})
+    window.scrollTo(0, 1200)
   }
 
   render() {
@@ -59,11 +59,12 @@ class App extends Component {
             parlors={this.state.parlors}
           />
           <Banner />
-          <CardContainer parlors={this.state.parlors} 
-                        icecream={this.state.icecream}
-                        search={this.state.value}
-                        searchByParlor={this.state.searchByParlor}/>
-          {/* <ErrorMessage /> */}
+          <CardContainer 
+            parlors={this.state.parlors} 
+            icecream={this.state.icecream}
+            search={this.state.value}
+            searchByParlor={this.state.searchByParlor}
+          />
         </div>
       </div>
     );
