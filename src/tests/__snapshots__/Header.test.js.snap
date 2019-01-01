@@ -29,6 +29,7 @@ exports[`Header should match the snapshot with all data passed in correctly 1`] 
     <Search
       searchFor={[MockFunction]}
     />
+    
     <SearchByParlor
       parlors={
         Array [
@@ -112,6 +113,7 @@ exports[`Header should match the snapshot with all data passed in correctly 1`] 
       }
       searchParlor={[MockFunction]}
     />
+    <SearchByParlor />
   </div>
 </header>
 `;

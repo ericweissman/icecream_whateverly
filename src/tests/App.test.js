@@ -83,6 +83,7 @@ describe('App', () => {
       value: '',
       searchByParlor: ''
     })
+      searchByParlor: ''})
   })
 
   

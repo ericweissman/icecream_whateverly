@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import App from './App.js';
 import './css/Main.scss';
-import { uid } from 'react-uid'
-import Card from './Card.js'
+import Card from './Card.js';
 
 class CardContainer extends Component {
   constructor(props) {

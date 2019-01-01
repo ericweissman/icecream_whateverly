@@ -1,18 +1,18 @@
+@import '_variables.scss';
 
-.popup_inner {
-  position: absolute;
-  left: 25%;
-  right: 25%;
-  top: 25%;
-  bottom: 25%;
-  margin: auto;
-  background: white;
-
-}
+// .popup_inner {
+//   background: #FFF;
+//   bottom: 25%;
+//   position: absolute;
+//   left: 25%;
+//   margin: auto;
+//   right: 25%;
+//   top: 25%;
+// }
 
 .parlor-card {
-  display: flex;
   align-items: center;
+<<<<<<< HEAD
   background-color: #f2f1f8;
   line-height: 75%;
   flex-direction: column;
@@ -30,3 +30,21 @@
 .parlor-details {
   text-align: center;
 }
+=======
+  background-color: $white-primary-color;
+  border: black 2px solid;
+  display: flex;
+  flex-direction: column;
+  line-height: 75%;
+  margin: 10px 15px;
+  padding: 5px;
+  width: 750px;
+  .parlor-name {
+    margin: 0px 10px;
+  }
+  .parlor-details {
+    text-align: center;
+  }
+}
+
+>>>>>>> 2a92d4c6f21b849ce00ce5bacc1c8b106ee21560

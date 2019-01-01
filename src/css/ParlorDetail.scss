@@ -1,34 +1,50 @@
+@import '_variables.scss';
+
 .parlor-detail-card {
-  position: fixed;
-  z-index: 3;
-  width: 90%;
-  height: 90%;
-  top: 0;
-  left: 0;
-  right: 0;
+  align-items: center;
+  background-color: $light-yellow;
+  border: 2px solid black;
   bottom: 0;
+<<<<<<< HEAD
   background-color: #fff8de;
   border: 2px solid black;
   overflow: scroll;
   margin: auto;
+=======
+>>>>>>> 2a92d4c6f21b849ce00ce5bacc1c8b106ee21560
   display:flex;
   flex-direction: column;
-  align-items: center;
+  height: 90%;
+  left: 0;
+  margin: auto;
+  overflow: scroll;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 90%;
+  z-index: 3;
    a {
+<<<<<<< HEAD
       color: #00dadd;
       font-weight: 600;
+=======
+      color: $turquoise-primary-color;
+>>>>>>> 2a92d4c6f21b849ce00ce5bacc1c8b106ee21560
       font-size: 30px;
     }
     p {
       line-height: 0px;
     }
-
     img {
+<<<<<<< HEAD
       padding-top: 25px;
       padding-bottom: 25px;
+=======
+      padding-bottom: 25px;
+      padding-top: 25px;
+>>>>>>> 2a92d4c6f21b849ce00ce5bacc1c8b106ee21560
       width: 220px;
     }
-
     ul {
       list-style: none;
       padding: 0;
@@ -37,10 +53,17 @@
       line-height: 100%;
     }
     button {
+<<<<<<< HEAD
     height: 50px;
     width: 140px;
     padding-bottom: 30px;
     margin-bottom: 40px;
+=======
+      height: 30px;
+      margin-bottom: 40px;
+      padding-bottom: 30px;
+      width: 140px;
+>>>>>>> 2a92d4c6f21b849ce00ce5bacc1c8b106ee21560
   }
   .bold {
     font-weight: 600;
