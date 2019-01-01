@@ -18,37 +18,6 @@
     &:hover {
         opacity: 1;
     }
-<<<<<<< HEAD
-}
-.big-ice-cream-name {
-    margin-top: 50px;
-    margin-left: 25px;
-    font-size: 40px;
-}
-
-.ice-cream-name {
-    font-size: 20px;
-    margin-bottom: 30px;
-    margin-top: 29px;
-}
-
-.flavor-img, .popup-flavor-img {
-    height: 110px;
-    width: 110px;
-    border-radius: 100%;
-    box-shadow: 0 0 2px 2px grey;
-}
-
-.popup-flavor-img {
-    margin-top: 25px;
-}
-
-.parlor-popup {
-    display: flex;
-    position: fixed;
-    z-index: 2;
-    // justify-content: center;
-=======
     .ice-cream-name {
         font-size: 20px;
         margin-bottom: 30px;
@@ -57,19 +26,12 @@
 }
 
 .parlor-popup {
->>>>>>> 2a92d4c6f21b849ce00ce5bacc1c8b106ee21560
     align-items: center;
     background-color: $pink-primary-color;
     border: 3px solid black;
     bottom: 0;
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
-    padding: 35px;
-    background-color: #ffd8d8;
-    width: 75%;
-=======
->>>>>>> 2a92d4c6f21b849ce00ce5bacc1c8b106ee21560
     height: 80%;
     left: 0;
     margin: auto;
