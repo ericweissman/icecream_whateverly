@@ -81,6 +81,10 @@ describe('App', () => {
       parlors: [],
       icecream: {},
       value: '',
+      searchByParlor: ''
+    })
       searchByParlor: ''})
   })
+
+  
 })

@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchByParlor should match snapshot when all data is passed correctly 1`] = `
+<div
+  className="SearchByParlor"
+>
+  <select
+    className="search-parlor"
+    onChange={[MockFunction]}
+  >
+    <option
+      disabled={true}
+      hidden={true}
+      selected={true}
+      value=""
+    >
+      Select Parlor
+    </option>
+    <option
+      value="show all"
+    >
+      Show All Parlors
+    </option>
+    <option
+      value="Little Man Ice Cream"
+    >
+      Little Man Ice Cream
+    </option>
+  </select>
+</div>
+`;

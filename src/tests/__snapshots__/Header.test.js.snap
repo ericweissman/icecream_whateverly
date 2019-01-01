@@ -29,6 +29,90 @@ exports[`Header should match the snapshot with all data passed in correctly 1`] 
     <Search
       searchFor={[MockFunction]}
     />
+    
+    <SearchByParlor
+      parlors={
+        Array [
+          Object {
+            "address": "2620 16th St, Denver, CO 80211",
+            "daysOpen": Array [
+              Object {
+                "close": "10 PM",
+                "day": "Sunday",
+                "open": "11 AM",
+              },
+              Object {
+                "close": "10 PM",
+                "day": "Monday",
+                "open": "11 AM",
+              },
+              Object {
+                "close": "10 PM",
+                "day": "Tuesday",
+                "open": "11 AM",
+              },
+              Object {
+                "close": "10 PM",
+                "day": "Wednesday",
+                "open": "11 AM",
+              },
+              Object {
+                "close": "10 PM",
+                "day": "Thursday",
+                "open": "11 AM",
+              },
+              Object {
+                "close": "11 PM",
+                "day": "Friday",
+                "open": "11 AM",
+              },
+              Object {
+                "close": "11 PM",
+                "day": "Saturday",
+                "open": "11 AM",
+              },
+            ],
+            "description": "Quirky shop for exotic ice cream",
+            "flavors": Array [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+            ],
+            "numberOfFlavors": 27,
+            "parlorName": "Little Man Ice Cream",
+            "phoneNumber": "303-455-3811",
+            "priceRange": "$",
+            "review": 4.7,
+            "website": "http://www.littlemanicecream.com/latest-scoop/menu/",
+          },
+        ]
+      }
+      searchParlor={[MockFunction]}
+    />
     <SearchByParlor />
   </div>
 </header>

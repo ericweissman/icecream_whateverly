@@ -1,8 +1,9 @@
 import React from 'react';
-import ParlorCard from '../ParlorCard';
+import SearchByParlor from '../SearchByParlor';
 import { shallow } from 'enzyme';
 
-let parlor = {
+const parlors = [
+  {
     "parlorName": "Little Man Ice Cream",
     "description": "Quirky shop for exotic ice cream",
     "address": "2620 16th St, Denver, CO 80211",
@@ -49,25 +50,26 @@ let parlor = {
     "numberOfFlavors": 27,
     "priceRange": "$",
     "review": 4.7
-  }
+  }]
 
-describe('ParlorCard', () => {
+const searchParlorMock = jest.fn();
+
+describe('SearchByParlor', () => {
   let wrapper;
 
   beforeEach(() => {
     wrapper = shallow(
-      <ParlorCard parlor={parlor} />
+      <SearchByParlor parlors={parlors} 
+                      searchParlor={searchParlorMock} />
     )
   })
 
-  it('should have the proper default state', () => {
-    expect(wrapper.state()).toEqual({ details: false });
-  });
-
-
-  it('should change ParlorCard details state to true when the getParlorDetails method is called', () => {
-      wrapper.find('.parlor-details').simulate('click', { details: false})
-      expect(wrapper.state('details')).toEqual(true)
+  it('should match snapshot when all data is passed correctly', () => {
+    expect(wrapper).toMatchSnapshot();
   })
 
+  it('should call searchParlor when the dropdown is manipulated', () => {
+    wrapper.find('.search-parlor').simulate('change', { target: { value: '' } });
+    expect(searchParlorMock).toBeCalled();
+  })
 })
