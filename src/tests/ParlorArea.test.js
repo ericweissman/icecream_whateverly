@@ -75,3 +75,17 @@ describe('ParlorArea', () => {
   //   });
   
 });
+
+let wrapper;
+
+describe('ParlorArea', () => {
+
+  beforeEach(() => {
+    wrapper = shallow(
+      <ParlorArea ParlorArea={ParlorArea} />
+      )
+    });
+  })
+  it('should match snapshot when all data is passed correctly', () => {
+    expect(wrapper).toMatchSnapshot();
+  });

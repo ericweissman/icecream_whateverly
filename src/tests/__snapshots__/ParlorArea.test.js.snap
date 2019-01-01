@@ -96,3 +96,6 @@ exports[`ParlorArea should match snapshot when all data is passed correctly 1`] 
   </button>
 </div>
 `;
+
+exports[`should match snapshot when all data is passed correctly 1`] = `undefined`;
+
