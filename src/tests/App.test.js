@@ -80,6 +80,7 @@ describe('App', () => {
     expect(wrapper.state()).toEqual({
       parlors: [],
       icecream: {},
-      value: ''})
+      value: '',
+      searchByParlor: ''})
   })
 })

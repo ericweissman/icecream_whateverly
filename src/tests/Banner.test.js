@@ -9,7 +9,7 @@ describe('Banner', () => {
 
   beforeEach(() => {
     wrapper = shallow(
-      <Banner Banner={banner} />
+      <Banner/>
       )
     });
   })
