@@ -29,8 +29,8 @@ class ParlorCard extends Component {
     } else {
       return (
           <div className='parlor-card'>
-            <button className='back-to-all-parlors' onClick={this.props.getParlorDetails}>Back to All Parlors</button>
             <ParlorDetail parlor={this.props.parlor} getParlorDetails={this.getParlorDetails}/>
+            <button className='back-to-all-parlors' onClick={this.props.getParlorDetails}>Back to All Parlors</button>
           </div>
       )
     }
