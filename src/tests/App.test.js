@@ -61,10 +61,10 @@ const icecream = {
     "description": "An old fashioned vanilla ice cream recipe that everyone loves"
   }
 }
-const value = ''
 
+
+let wrapper;
 describe('App', () => {
-  let wrapper;
 
   beforeEach(() => {
     wrapper = shallow(
@@ -84,6 +84,17 @@ describe('App', () => {
       searchByParlor: ''
     })
       searchByParlor: ''})
+  })
+
+  it('searchFor method should set state.value with search string', () => {
+    const mockedEvent = {
+      target: {
+        value: 'mockedSearchString',
+      }
+    };
+    expect(wrapper.state().value).toEqual('');
+    wrapper.instance().searchFor(mockedEvent);
+    expect(wrapper.state().value).toEqual('mockedSearchString');
   })
 
   
