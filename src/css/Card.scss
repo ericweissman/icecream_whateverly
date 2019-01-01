@@ -25,6 +25,7 @@
 }
 
 .parlor-popup {
+    animation: popUp 1s ease 0s 1 normal;     
     align-items: center;
     background-color: #ffc8c8;
     border: 3px solid black;
@@ -61,7 +62,15 @@
 }
 
 
-
+@keyframes popUp {
+  0% {
+    transform: translateY(500px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+  
+}
 
 
 

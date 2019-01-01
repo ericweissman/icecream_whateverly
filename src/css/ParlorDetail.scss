@@ -1,6 +1,8 @@
 @import '_variables.scss';
 
 .parlor-detail-card {
+  animation: fadeIn .3s linear 0s 1 normal; 
+  animation-fill-mode: undefined;
   align-items: center;
   background-color: $light-yellow;
   border: 2px solid black;
@@ -39,6 +41,7 @@
       height: 30px;
       padding-bottom: 30px;
       width: 150px;
+      margin-bottom: 25px;
   }
   .bold {
     font-weight: 600;
@@ -47,3 +50,13 @@
     font-style: italic;
   }
  }
+
+
+ @keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
