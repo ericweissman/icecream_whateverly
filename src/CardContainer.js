@@ -28,7 +28,7 @@ class CardContainer extends Component {
       flavorsToRender = this.parlorFlavorsToRender();
     }
     return (
-      <div className="card-container">
+      <div className="card-container">    
        {flavorsToRender.map((flavor) => {
           const flavorName = this.props.icecream[flavor].name.toLowerCase()
           if (flavorName.includes(this.props.search.toLowerCase())) {
@@ -40,9 +40,10 @@ class CardContainer extends Component {
                 flavor={this.props.icecream[flavor].name}
                 info={this.props.icecream[flavor].description}
                 parlors={this.props.parlors}
-              />
+                />
+
             )
-          }
+          } 
        })
       }
       </div>

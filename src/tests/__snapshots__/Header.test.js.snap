@@ -8,7 +8,7 @@ exports[`Header should match the snapshot with all data passed in correctly 1`] 
     className="header-search-cont"
   >
     <img
-      className="header-svg"
+      alt="Ice Cream"
       src={
         Object {
           "ReactComponent": [Function],
@@ -17,11 +17,9 @@ exports[`Header should match the snapshot with all data passed in correctly 1`] 
         }
       }
     />
-    <header
-      className="title"
-    >
+    <h1>
       iScream
-    </header>
+    </h1>
     <Search
       searchFor={[MockFunction]}
     />

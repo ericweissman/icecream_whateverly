@@ -46,7 +46,6 @@ class App extends Component {
 
   searchParlor = (event) => {
     this.setState({searchByParlor: event.target.value})
-    window.scrollTo(0, 1200)
   }
 
   render() {

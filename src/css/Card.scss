@@ -28,13 +28,14 @@
     h1 {
         font-size: 20px;
         margin: 30px;
+        padding-top: 15px;
         text-align: center;
         line-height: 20px;
     }
 }
 
 .parlor-popup {
-    animation: popUp .75s ease 0s 1 normal;     
+    animation: popUp .5s ease 0s 1 normal;     
     align-items: center;
     background-color: #ffc8c8;
     border: 3px solid black;
