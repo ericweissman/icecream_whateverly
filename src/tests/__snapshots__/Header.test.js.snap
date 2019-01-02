@@ -5,7 +5,7 @@ exports[`Header should match the snapshot with all data passed in correctly 1`] 
   className="header"
 >
   <div
-    className="header-svg-cont"
+    className="header-search-cont"
   >
     <img
       className="header-svg"
@@ -17,10 +17,6 @@ exports[`Header should match the snapshot with all data passed in correctly 1`] 
         }
       }
     />
-  </div>
-  <div
-    className="header-search-cont"
-  >
     <header
       className="title"
     >
@@ -29,7 +25,6 @@ exports[`Header should match the snapshot with all data passed in correctly 1`] 
     <Search
       searchFor={[MockFunction]}
     />
-    
     <SearchByParlor
       parlors={
         Array [
@@ -113,7 +108,6 @@ exports[`Header should match the snapshot with all data passed in correctly 1`] 
       }
       searchParlor={[MockFunction]}
     />
-    <SearchByParlor />
   </div>
 </header>
 `;

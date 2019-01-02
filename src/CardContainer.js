@@ -35,6 +35,7 @@ class CardContainer extends Component {
             return (
               <Card
                 id={flavor}
+                key={flavor}
                 img={flavor} 
                 flavor={this.props.icecream[flavor].name}
                 info={this.props.icecream[flavor].description}
