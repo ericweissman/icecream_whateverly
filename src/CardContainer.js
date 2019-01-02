@@ -42,7 +42,9 @@ class CardContainer extends Component {
                 parlors={this.props.parlors}
               />
             )
-          }
+          } 
+          //  else if (!flavorName.includes(this.props.search.toLowerCase())) {
+          // }
        })
       }
       </div>

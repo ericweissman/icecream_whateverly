@@ -87,15 +87,14 @@ exports[`ParlorArea should match snapshot when all data is passed correctly 1`] 
         }
       }
     />
+    <button
+      className="back-to-all-flavors"
+      onClick={[MockFunction]}
+    >
+      Back To All Flavors
+    </button>
   </div>
-  <button
-    className="back-to-all-flavors"
-    onClick={[MockFunction]}
-  >
-    Back To All Flavors
-  </button>
 </div>
 `;
 
 exports[`should match snapshot when all data is passed correctly 1`] = `undefined`;
-
