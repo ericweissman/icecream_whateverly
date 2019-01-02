@@ -1,7 +1,6 @@
 @import "App";
 @import "Card";
 @import "CardContainer";
-@import "Display";
 @import "Header";
 @import "index";
 @import "ParlorArea";
@@ -34,7 +33,8 @@ button {
     font-size: 14px;
     margin-left: 5px;
     margin-top: 7px;
-    padding: 4.5px;
+    padding: 4.5px 10px;
+    outline: none;
 }
 
 button {

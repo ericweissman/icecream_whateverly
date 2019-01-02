@@ -23,8 +23,8 @@ class ParlorArea extends Component {
                 )
               })
             } 
-        </div>
             <button onClick={this.props.getMoreInfo} className="back-to-all-flavors">Back To All Flavors</button>
+        </div>
       </div>
       )
     };

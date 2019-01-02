@@ -3,7 +3,6 @@ import CardContainer from './CardContainer.js';
 import Header from './Header';
 import Banner from './Banner';
 import './css/Main.scss';
-import SearchByParlor from './SearchByParlor';
 
 class App extends Component {
   constructor() {

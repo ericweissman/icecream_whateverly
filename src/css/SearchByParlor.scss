@@ -1,10 +1,12 @@
 @import '_variables.scss';
 
 .search-parlor {
-    border: solid 2px $grey;
-    color: $grey;
+    border: solid 2px #757575;
+    color: #757575;
     height: 47px;
     margin-left: 15px;
+    width: 265px;
     padding: 6px;
     text-align: center;
+    outline: none;
 }

@@ -1,30 +1,25 @@
 @import '_variables.scss';
 
-// .popup_inner {
-//   background: #FFF;
-//   bottom: 25%;
-//   position: absolute;
-//   left: 25%;
-//   margin: auto;
-//   right: 25%;
-//   top: 25%;
-// }
-
 .parlor-card {
   align-items: center;
+  text-align: center;
   background-color: $white-primary-color;
   border: black 2px solid;
   display: flex;
   flex-direction: column;
   line-height: 75%;
   margin: 10px 15px;
-  padding: 5px;
-  width: 750px;
+  padding: 15px;
+  border-radius: 15px;
   .parlor-name {
     margin: 0px 10px;
   }
   .parlor-details {
     text-align: center;
   }
+}
+
+.parlor-list {
+  text-align: center;
 }
 

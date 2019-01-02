@@ -3,18 +3,16 @@
 .banner-center {
     align-items: center;
     background-color: $white-primary-color;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
+    border-bottom: 1px solid #0000df59;
+    border-top: 1px solid #db27604d;
     display: flex;
-    height: 500px;
-    margin-top: -16px;
     .banner-text {
         font-size: 17px;
         padding: 10px;
     }
     .cones-img {
-        height: 500px;
-        width: 900px;
+        height: 225px;
+        width: 660px;
     }
 }
 

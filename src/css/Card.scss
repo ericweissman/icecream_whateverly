@@ -3,31 +3,38 @@
 .ice-cream-card {
     display: flex;
     height: 290px;
-    width: 320px;
     justify-content: center;
     align-items: center;
-    margin: 25px;
+    margin: 0px 25px;
     flex-direction: column;
     padding: 35px;
-    font-size: 12px;
     background: url(/images/cup.png);
     background-size: 393px;
-    background-repeat: no-repeat;
     opacity: .75;
-    
+
     &:hover {
         opacity: 1;
     }
-    .ice-cream-name {
+
+    img {
+        border-radius: 100%;
+        box-shadow: 0 0 2px 2px $grey;
+        height: 110px;
+        width: 110px;
+    }
+
+    h1 {
         font-size: 20px;
-        margin-bottom: 30px;
-        margin-top: 29px;
+        margin: 30px;
+        text-align: center;
+        line-height: 20px;
     }
 }
 
 .parlor-popup {
+    animation: popUp .75s ease 0s 1 normal;     
     align-items: center;
-    background-color: $pink-primary-color;
+    background-color: #ffc8c8;
     border: 3px solid black;
     bottom: 0;
     display: flex;
@@ -40,26 +47,38 @@
     position: fixed;
     right: 0;
     top: 0;
-    // white-space: nowrap;
-    width: 75%;
+    width: 71%;
     z-index: 2;
-    .icecream-description {
-        margin-top: -10px;
+    border-radius: 15px;
+
+    img {
+        border-radius: 100%;
+        height: 200px;
+        width: 200px;
     }
+
     .big-ice-cream-name {
         margin-left: 25px;
         font-size: 40px;
     }
+
+    .icecream-description {
+        margin: -10px 0;
+        text-align: center;
+    }
 }
 
-.flavor-img, .popup-flavor-img {
-    border-radius: 100%;
-    box-shadow: 0 0 2px 2px $grey;
-    height: 110px;
-    width: 110px;
+
+
+// Animations
+@keyframes popUp {
+  0% {
+    transform: translateY(500px);
+  }
+  100% {
+    transform: translateY(0px);
+  } 
 }
-
-
 
 
 
