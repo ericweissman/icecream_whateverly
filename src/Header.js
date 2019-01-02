@@ -8,7 +8,7 @@ const Header = (props) => {
     return (
       <header className="header">
         <div className="header-search-cont">
-          <img src={require('./css/images/ice-cream.svg')}/>
+          <img src={require('./css/images/ice-cream.svg')} alt="Ice Cream"/>
           <h1>iScream</h1>
           <Search searchFor={props.searchFor}/>
           <SearchByParlor parlors={props.parlors} searchParlor={props.searchParlor}/>

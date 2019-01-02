@@ -4,7 +4,7 @@ import './css/Main.scss';
 const ParlorDetail = (props) => {
     return (
         <div className="parlor-detail-card">
-            <img src={`./images/Parlors/${props.parlor.parlorName}.png`}/>
+            <img src={`./images/Parlors/${props.parlor.parlorName}.png`} alt="Ice Cream Parlor Name"/>
             <a href={props.parlor.website} target="_blank">{props.parlor.parlorName}</a>
             <p className='italic'>{props.parlor.address}</p>
             <p>{props.parlor.phoneNumber}</p>
