@@ -27,11 +27,17 @@
 ![new-icecream-whateverly-wireframe](https://user-images.githubusercontent.com/20710327/50453475-70e4b000-0906-11e9-9505-1a15e18e11f2.png)
 
 #### Screenshots
+##### Main Page
+![scroll-12](https://user-images.githubusercontent.com/20710327/50618002-4cac4480-0ead-11e9-8577-acd0a1ad548c.gif)
+
 ##### More Info Functionality
 ![moreinfo](https://user-images.githubusercontent.com/20710327/50617879-99435000-0eac-11e9-89e3-71287283f02e.gif)
 
-##### Search Functionality
+##### Search by Flavor Functionality
 ![search](https://user-images.githubusercontent.com/20710327/50617730-e672f200-0eab-11e9-848f-b867cea97b65.gif)
+
+##### Filter by Parlor Functionality
+![parlorssearch](https://user-images.githubusercontent.com/20710327/50617928-ddceeb80-0eac-11e9-80c6-a6c78d60628b.gif)
 
 ## Contributors
 [Heather Hartley](https://github.com/hlhartley)
