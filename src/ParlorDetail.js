@@ -5,16 +5,13 @@ class ParlorDetail extends Component {
     constructor(props) {
         super(props);
 
-        // this.state = {
-        //     showParlorDetails: false;
-        // }
     }
     
     render() {
         return (
         <div className="parlor-detail-card">
             <img src={`./images/Parlors/${this.props.parlor.parlorName}.png`}/>
-            <a href={this.props.parlor.website} className='bold'>{this.props.parlor.parlorName}</a>
+            <a href={this.props.parlor.website}>{this.props.parlor.parlorName}</a>
             <p className='italic'>{this.props.parlor.address}</p>
             <p>{this.props.parlor.phoneNumber}</p>
             <ul>

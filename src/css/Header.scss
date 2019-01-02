@@ -8,7 +8,7 @@
     font-size: 50px;
     justify-content: center;
     padding: 25px;
-    .title {
+    h1 {
         color: $turquoise-primary-color;
         font-family: $title-font;
         font-size: 66px;
@@ -18,20 +18,20 @@
         height: 84px;
         margin-top: -15px;
         animation: App-logo-spin infinite 20s linear;
-        animation: pulse infinite 2s linear;
+        animation: pulse infinite 2.5s linear;
     }
 }
 
 
 // Animations
-// @keyframes App-logo-spin {
-//   from {
-//     transform: rotate(0deg);
-//   }
-//   to {
-//     transform: rotate(360deg);
-//   }
-// }
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 @keyframes pulse {
   0% {

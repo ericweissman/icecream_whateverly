@@ -21,15 +21,15 @@ class Card extends Component {
     if (this.state.moreInfo === false) {
       return (
         <div className='ice-cream-card' id={this.props.id}>
-          <h1 className="ice-cream-name">{this.props.flavor}</h1>
-          <img className="flavor-img" src={`./images/Flavors/${this.props.img}.jpg`} />
+          <h1>{this.props.flavor}</h1>
+          <img src={`./images/Flavors/${this.props.img}.jpg`} />
           <button onClick={this.getMoreInfo} className="more-info-btn">More Info</button>
         </div>
       );
     } else {
       return (
           <div className='parlor-popup'>
-            <img className="popup-flavor-img" src={`./images/Flavors/${this.props.img}.jpg`} />
+            <img src={`./images/Flavors/${this.props.img}.jpg`} />
             <h1 className="big-ice-cream-name">{this.props.flavor}</h1>
             <p className='icecream-description'>{this.props.info}</p>
             <ParlorArea parlors={this.props.parlors} id={this.props.id} getMoreInfo={this.getMoreInfo}/>

@@ -21,6 +21,7 @@
    a {
       color: $turquoise-primary-color;
       font-size: 30px;
+      font-weight: 600;
     }
     p {
       line-height: 0px;
@@ -29,6 +30,7 @@
       padding-bottom: 25px;
       padding-top: 25px;
       width: 220px;
+      border-radius: 0%;
     }
     ul {
       list-style: none;
@@ -43,9 +45,7 @@
       width: 150px;
       margin-bottom: 25px;
   }
-  .bold {
-    font-weight: 600;
-  }
+
   .parlor-address {
     font-style: italic;
   }
