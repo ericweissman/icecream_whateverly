@@ -97,4 +97,14 @@ describe('App', () => {
     expect(wrapper.state().value).toEqual('mockedSearchString');
   })
 
+  it('searchParlor method should set state.searchByParlor with search string', () => {
+    const mockedEvent2 = {
+      target: {
+        value: 'mockedSearchString2',
+      }
+    };
+    expect(wrapper.state().searchByParlor).toEqual('');
+    wrapper.instance().searchParlor(mockedEvent2);
+    expect(wrapper.state().searchByParlor).toEqual('mockedSearchString2');
+  })
   
