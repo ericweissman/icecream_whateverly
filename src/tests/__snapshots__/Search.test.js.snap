@@ -10,7 +10,7 @@ exports[`Search should match snapshot when all data is passed correctly 1`] = `
     <input
       className="search-input"
       onChange={[MockFunction]}
-      placeholder="search flavors"
+      placeholder="Search flavors"
       type="text"
     />
   </i>

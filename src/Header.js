@@ -1,27 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './css/Main.scss';
 import Search from './Search.js';
 import SearchByParlor from './SearchByParlor';
 
 
-class Header extends Component {
-  constructor() {
-    super();
-  }
-  render() {
+const Header = (props) => {
     return (
       <header className="header">
         <div className="header-search-cont">
-          <img src={require('./css/images/ice-cream.svg')}/>
+          <img src={require('./css/images/ice-cream.svg')} alt="Ice Cream"/>
           <h1>iScream</h1>
-          <Search searchFor={this.props.searchFor}/>
-          <SearchByParlor parlors={this.props.parlors} searchParlor={this.props.searchParlor}/>
+          <Search searchFor={props.searchFor}/>
+          <SearchByParlor parlors={props.parlors} searchParlor={props.searchParlor}/>
         </div>
       </header>
     );
   }
-}
-
-
 
 export default Header;

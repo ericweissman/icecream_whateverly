@@ -14,7 +14,7 @@ exports[`SearchByParlor should match snapshot when all data is passed correctly 
       selected={true}
       value=""
     >
-      Select Parlor
+      Select parlor
     </option>
     <option
       value="show all"

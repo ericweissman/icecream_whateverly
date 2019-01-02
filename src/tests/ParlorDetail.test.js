@@ -53,8 +53,8 @@ const parlor = [{
 
 const getParlorDetailsMock = jest.fn()
 
+let wrapper;
 describe('ParlorDetail', () => {
-  let wrapper;
 
   beforeEach(() => {
     wrapper = shallow(

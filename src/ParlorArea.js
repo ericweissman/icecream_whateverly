@@ -1,20 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './css/Main.scss';
 import ParlorCard from './ParlorCard.js';
 
-class ParlorArea extends Component {
-  constructor(props) {
-    super(props)
-
-  };
-
-  render() {
-    return ( 
+const ParlorArea = (props) => {
+  return (
       <div className="parlor-area">
         <div className="parlor-list">
           {
-            this.props.parlors.filter((parlor) => {
-              return parlor.flavors.includes(parseInt(this.props.id))
+            props.parlors.filter((parlor) => {
+              return parlor.flavors.includes(parseInt(props.id))
             })
             .map((parlor) => {
               return (
@@ -23,11 +17,10 @@ class ParlorArea extends Component {
                 )
               })
             } 
-            <button onClick={this.props.getMoreInfo} className="back-to-all-flavors">Back To All Flavors</button>
+            <button onClick={props.getMoreInfo} className="back-to-all-flavors">Back To All Flavors</button>
         </div>
       </div>
       )
-    };
   }
   
 
