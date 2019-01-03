@@ -27,19 +27,5 @@
 }
 
 button {
-    background-color: #FFF;
-    border-radius: 15px;
-    font-size: 14px;
-    margin-left: 5px;
-    margin-top: 7px;
-    padding: 4.5px 10px;
-    outline: none;
-}
-
-button {
-    &:hover {
-        background-color: $light-brown;
-        color: #FFF;
-        cursor: pointer;
-    }
+    @include button
 }
